@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="10dp"
+
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+
+    android:background="@drawable/detail"
+
+
+    android:id="@+id/row"
+    android:weightSum="5"
+
+    android:layout_height="150dp"
+  >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Date"
+        android:textSize="16dp"
+        android:layout_weight="4"
+        android:textStyle="bold"
+        android:id="@+id/date"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total Case"
+                android:textSize="9dp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                android:textColor="@color/AppColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00000000"
+                android:id="@+id/tcase"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="4"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total deceased"
+                android:textSize="9dp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                android:textColor="@color/AppColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00"
+                android:paddingTop="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:id="@+id/tdeath"
+
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout></androidx.cardview.widget.CardView>
